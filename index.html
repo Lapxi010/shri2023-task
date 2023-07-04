@@ -5,6 +5,17 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Яндекс.Дом</title>
+    <link rel="preload" as="image" href="assets/arrow-down.svg">
+    <link rel="preload" as="image" href="assets/arrow-left.png">
+    <link rel="preload" as="image" href="assets/icon_list_m@1x.svg">
+    <link rel="preload" as="image" href="assets/icon_scheduled.svg">
+    <link rel="preload" as="image" href="assets/icon_sun.svg">
+    <link rel="preload" as="image" href="assets/icon_sun_2.svg">
+    <link rel="preload" as="image" href="assets/icon_temperature.svg">
+    <link rel="preload" as="image" href="assets/icon_temperature_2.svg">
+    <link rel="preload" as="image" href="assets/logo.svg">
+    <link rel="preload" as="image" href="assets/bg@2x.png">
+    <link rel="preload" as="image" href="assets/cloud-drizzle.svg">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -30,7 +41,7 @@
         © 1997–2023 ООО «Яндекс»
     </div>
 </footer>
-<script src="vendors/react-with-dom.js"></script>
+<script src="vendors/react-with-dom.min.js"></script>
 <script src="vendors/babel.min.js"></script>
 <script type="text/babel">
     function Header() {
@@ -389,16 +400,15 @@
         </main>;
     }
 
-    setTimeout(() => {
-        const root = ReactDOM.createRoot(document.getElementById('app'));
-        root.render(
-            <>
-                <Header />
-                <Main />
-            </>
-        );
-    }, 100);
+    
+    const root = ReactDOM.createRoot(document.getElementById('app'));
+    root.render(
+        <>
+            <Header />
+            <Main />
+        </>
+    );
+    
 </script>
-
 </body>
 </html>
