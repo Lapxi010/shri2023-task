@@ -6,33 +6,9 @@
           content="width=device-width, initial-scale=1.0">
     <title>Яндекс.Дом</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-<div id="app"></div>
-
-<footer class="footer">
-    <ul class="footer__list">
-        <li class="footer__item">
-            <a class="footer__link" href="/">Помощь</a>
-        </li>
-        <li class="footer__item">
-            <a class="footer__link" href="/">Обратная связь</a>
-        </li>
-        <li class="footer__item">
-            <a class="footer__link" href="/">Разработчикам</a>
-        </li>
-        <li class="footer__item">
-            <a class="footer__link" href="/">Условия использования</a>
-        </li>
-    </ul>
-
-    <div class="footer__copyright">
-        © 1997–2023 ООО «Яндекс»
-    </div>
-</footer>
-<script async src="vendors/react-with-dom.min.js"></script>
-<script async src="vendors/babel.min.js"></script>
-<script async type="text/babel">
+    <script defer src="vendors/react-with-dom.min.js"></script>
+<script defer src="vendors/babel.min.js"></script>
+<script defer type="text/babel">
     function Header() {
         let [expanded, setExpanded] = React.useState(false);
         let [toggled, setToggled] = React.useState(false);
@@ -399,5 +375,29 @@
     );
     
 </script>
+</head>
+<body>
+<div id="app"></div>
+
+<footer class="footer">
+    <ul class="footer__list">
+        <li class="footer__item">
+            <a class="footer__link" href="/">Помощь</a>
+        </li>
+        <li class="footer__item">
+            <a class="footer__link" href="/">Обратная связь</a>
+        </li>
+        <li class="footer__item">
+            <a class="footer__link" href="/">Разработчикам</a>
+        </li>
+        <li class="footer__item">
+            <a class="footer__link" href="/">Условия использования</a>
+        </li>
+    </ul>
+
+    <div class="footer__copyright">
+        © 1997–2023 ООО «Яндекс»
+    </div>
+</footer>
 </body>
 </html>
